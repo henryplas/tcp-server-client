@@ -1,0 +1,22 @@
+This repository contains a simple chat application, lightly adapted from the boost::asio examples available online.
+
+BUILDING
+
+There are two main make targets, 'client' and 'chatroom'.
+'make all' will build both.
+
+You will need a g++ version (4.9.0 or greater) that supports the c++14 standard and you will need the boost library for c++.
+On Ubuntu 16.04, the g++ installed by default is sufficient and the package for boost is libboost-all-dev.
+
+RUNNING
+
+To run the chatroom, type './chatroom <portnum>'.
+To run a client and connect to the chatroom, type './client <hostname_or_ip> <portnum>'.
+
+The chatroom will echo all messages it receives from all clients to all other clients.
+To send a message from a client prompt, type something and press enter.  The message will propagate to all other connected clients.
+
+TODO
+
+Complete the items in tasks.txt.
+Our intention is for this to take 3-4 hours. You may take more time if you wish.
